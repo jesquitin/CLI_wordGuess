@@ -21,12 +21,12 @@ var Word = function(randWord){
             this.letters[i] = new Letter (this.letters[i]);
             //runs the showCharacter funtion form letters.js place holder for underscores
             console.log(this.letters[i]);
-            this.letters[i].showCharacter();
+            //this.letters[i].showCharacter();
         }
     };
 };
 
-//test word.js ALL WORKING and hate the (.this)
+//test word.js ALL WORKING 
 //var aWord = new Word ("javascript");
 //aWord.splitWord();
 //aWord.lettersNeeded();

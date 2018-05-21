@@ -6,9 +6,9 @@ var Letter = function(character){
     //checks if letter is correct
     this.showCharacter = function (){
         if (this.correctLetter) {
-            //console.log(this.character);
+            console.log(this.character);
         }else {
-            //console.log("_");
+            console.log("_");
         }
     };
 };

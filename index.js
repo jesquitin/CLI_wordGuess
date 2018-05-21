@@ -88,7 +88,7 @@ function chooseRandomWord() {
 				aWord.letters[i].correctLetter === true;
 				//Set userGuessedCorrectly to true.
 				userGuessedCorrectly = true;
-				aWord.underscores[i] = guess.letter.toUpperCase();
+				//aWord.underscores[i] = guess.letter.toUpperCase();
 				//increment underscores
 				display++;
 			}
@@ -148,8 +148,8 @@ function playAgain() {
 	    default: true
 	  }
 	];
-	inquirer.prompt(playGameAgain).then(userWantsTo => {
-		if (userWantsTo.playAgain){
+	inquirer.prompt(playGameAgain).then(userWantsToPlay => {
+		if (userWantsToPlay.playAgain){
 			//Empty out arrays.
 			lettersGuessed  = "";
 			lettersGuessedArray = [];
