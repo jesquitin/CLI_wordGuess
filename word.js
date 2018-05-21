@@ -14,7 +14,7 @@ var Word = function(randWord){
         this.letters = this.randWord.split("");
         underscoresNeeded = this.letters.length;
         //number of underscores in the underscore array and add a spce between the underscores
-        console.log(this.underscore.join(" "));
+        console.log(this.underscore.join("_"));
     };
     this.lettersNeeded = function(){
         for ( var i = 0; i < this.letters.length; i++){

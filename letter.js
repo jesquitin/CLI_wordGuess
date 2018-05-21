@@ -1,15 +1,14 @@
 var Letter = function(character){
-    //Stores the underlying character for the letter
+    //Stores stores letter and convers to uppercase
     this.character = character.toUpperCase();
     //Stores a boolean value whether the letter has been guessed yet
     this.correctLetter = false;
-    //A function that returns the underlying character if the letter has been guessed
-    //or a placeholder(underscore) if the letter has not been guessed
+    //checks if letter is correct
     this.showCharacter = function (){
         if (this.correctLetter) {
-            console.log(this.character);
+            //console.log(this.character);
         }else {
-            console.log("_");
+            //console.log("_");
         }
     };
 };
