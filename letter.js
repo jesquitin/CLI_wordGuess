@@ -1,26 +1,22 @@
-var Letter = function(letter){
-    this.letter = letter.toLowerCase();
-    this.underscore = "-";
-    this.guess = false;
-    this.getDisplayLetter = function(){
-        if(this.guessed){
-            return this.letter;
-        }
-        return this.underscore;
-    };
-    //checks the user guess
-    this.checkGuess = function(guess){
-        if (this.letter === guess){
-            this.guessed = true;
+var Letter = function(character){
+    //Stores the underlying character for the letter
+    this.character = character.toUpperCase();
+    //Stores a boolean value whether the letter has been guessed yet
+    this.correctLetter = false;
+    //A function that returns the underlying character if the letter has been guessed
+    //or a placeholder(underscore) if the letter has not been guessed
+    this.showCharacter = function (){
+        if (this.correctLetter) {
+            console.log(this.character);
         }else {
-           //console.log("_");
+            console.log("_");
         }
     };
-
 };
 
-//test the letter.js
-//var Letter1 = new Letter ("j");
-//Letter1.checkGuess();
+//test
+//var Letter1 = new Letter("j");
+//Letter1.showCharacter();
 
+//export to use in the word.js file
 module.exports = Letter;
